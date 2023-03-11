@@ -1,3 +1,15 @@
+# rbay
+
+set redis config file in .env file using information from https://app.redislabs.com/#/login
+
+Need the following keys:
+
+```
+REDIS_HOST=
+REDIS_PORT=
+REDIS_PW=
+```
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
