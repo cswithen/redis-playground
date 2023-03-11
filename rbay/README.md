@@ -10,6 +10,16 @@ REDIS_PORT=
 REDIS_PW=
 ```
 
+If you do not already have HomeBrew installed, navigate to https://brew.sh/ and run the command at the top in your terminal to install HomeBrew
+
+At your terminal, run brew tap redis-stack/redis-stack
+
+At your terminal, run brew install redis-stack
+
+To start Redis, run redis-stack-server
+
+To connect to your local Redis server and execute commands, run redis-cli
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
