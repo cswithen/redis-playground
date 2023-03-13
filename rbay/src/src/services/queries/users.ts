@@ -13,6 +13,7 @@ export const getUserById = async (id: string) => {
 
 export const createUser = async (attrs: CreateUserAttrs) => {
 	const id = genId();
+
 	await client.hSet(usersKey(id), serialize(attrs));
 
 	return id;
@@ -25,7 +26,7 @@ const serialize = (user: CreateUserAttrs) => {
 	};
 };
 
-const deserialize = async (id: string, user: { [key: string]: string }) => {
+const deserialize = (id: string, user: { [key: string]: string }) => {
 	return {
 		id,
 		username: user.username,
